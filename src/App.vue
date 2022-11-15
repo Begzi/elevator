@@ -62,13 +62,6 @@ export default {
       return {};
     },
     elevatorStyles() {
-      if (this.relax) {
-        return {
-          "animation-name": `blinker`,
-          "animation-duration": `3s`,
-          transform: `translateY(${this.matchNumberToString[this.endFloor]})`,
-        };
-      }
       return {
         "animation-name": `elevator-move-${this.startFloor}-${this.endFloor}`,
         transform: `translateY(${this.matchNumberToString[this.endFloor]})`,
